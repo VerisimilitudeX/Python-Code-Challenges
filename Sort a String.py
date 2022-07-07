@@ -1,7 +1,4 @@
-def sortastring(stringin):
-    stringin = stringin.split()
-    stringin.sort()
-    return stringin
+def sort_words(words):
+    return sorted(words.split(), key=str.lower)
 
-stringin = input("Enter a string: ")
-sortastring(stringin)
+sort_words(input("Enter a string: "))
